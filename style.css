@@ -1,0 +1,147 @@
+
+body {
+    background-color: #f1f1f1; 
+} 
+
+.nav-main {
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.hamburger-toggle-nav {
+    width: 60px;
+    height: 100%;
+    background-color: #f1f1f1;
+    background-image: url("hamburger_menu_icon.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor:pointer;
+    border: 1px solid #828f89;
+}
+
+.hamburger-toggle-nav:hover {
+    opacity: 0.9;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.nav-main ul li {
+    list-style: none;
+    line-height: 50px;
+
+}
+
+.nav-main ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: calc(100vh - 64px);
+    padding: 0 5px;
+    background: transparent;
+    border: 1px solid #828f89;
+    z-index: 1000; 
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+ }
+
+.nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+    margin-left: -42px
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    margin-left: 0px;
+    text-transform: uppercase;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.letterkleur-wit {
+    background-color:#f1f1f1;
+}
+
+.letterkleur-rood {
+    background-color: red;
+}
+
+.letterkleur-oranje {
+    background-color: orange;
+}
+
+.letterkleur-paars {
+    background-color: purple;
+}
+
+.container-rood {
+    top: 0;
+    left: 0;
+    background-color: red;
+    text-align: center;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+}
+
+.container-oranje {
+    top: 0;
+    left: 0;
+    background-color:orange;
+    text-align: center;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+}
+
+.container-paars {
+    top: 0;
+    left: 0;
+    background-color: purple;
+    text-align: center;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+}
+
+.container-main-text {
+    margin: 120px auto;
+    text-align: center;
+
+}
+
